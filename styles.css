@@ -21,7 +21,7 @@ nav img{height:52px;width:auto;background:#fff;border-radius:8px;padding:2px 6px
 .burger{display:none;background:none;border:0;width:48px;height:48px;cursor:pointer;padding:12px}
 .burger span{display:block;height:3px;background:#fff;margin:5px 0;border-radius:2px;transition:.3s}
 .burger[aria-expanded=true] span:nth-child(1){transform:translateY(8px) rotate(45deg)}.burger[aria-expanded=true] span:nth-child(2){opacity:0}.burger[aria-expanded=true] span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
-.hero{position:relative;min-height:100svh;display:grid;align-items:center;color:#fff;background:linear-gradient(120deg,rgba(17,17,20,.96) 35%,rgba(120,8,14,.8)),url(../assets/img/hero.jpg) center/cover;padding:130px 0 80px;overflow:hidden}
+.hero{position:relative;min-height:100svh;display:grid;align-items:center;color:#fff;background:linear-gradient(120deg,rgba(17,17,20,.96) 35%,rgba(120,8,14,.8)),url(./hero.jpg) center/cover;padding:130px 0 80px;overflow:hidden}
 .hero::after{content:"";position:absolute;right:-8%;top:0;bottom:0;width:38%;background:linear-gradient(110deg,transparent 40%,rgba(211,18,27,.55) 41%,rgba(211,18,27,.55) 46%,transparent 47%,transparent 55%,rgba(255,255,255,.12) 56%,rgba(255,255,255,.12) 58%,transparent 59%);pointer-events:none}
 .hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;position:relative;z-index:1}
 .hero h1{font-size:clamp(2.4rem,6vw,4.4rem)}.hero h1 em{color:#ff3b43;font-style:normal}
