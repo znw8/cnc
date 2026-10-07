@@ -1,1 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Terms &amp; Conditions | CNC Custom Designs LLC</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#f2f2f2;font-family:Helvetica,Arial,sans-serif;color:#222;padding:24px 14px}
+  .card{max-width:760px;margin:0 auto;background:#fff;border:2px solid #222;border-radius:22px;padding:34px 36px 26px}
+  h1{margin:0;text-align:center;font-size:clamp(26px,5vw,38px);color:#000;letter-spacing:.3px}
+  .rule{height:5px;background:#c8151b;width:88%;margin:12px auto 30px;border-radius:2px}
+  h2{margin:26px 0 6px;font-size:clamp(18px,3.4vw,22px);color:#c8151b}
+  p{margin:0;font-size:clamp(15px,2.6vw,18px);line-height:1.6}
+  .foot{margin-top:30px;text-align:center;font-style:italic;font-size:14px;color:#555}
+  .bar{max-width:760px;margin:0 auto 14px;display:flex;justify-content:space-between;align-items:center}
+  .bar a,.bar button{font:inherit;font-size:14px;color:#c8151b;background:none;border:1px solid #c8151b;border-radius:20px;padding:6px 14px;cursor:pointer;text-decoration:none}
+  .bar button.on{background:#c8151b;color:#fff}
+  .lang{display:flex;gap:6px}
+  [data-l]{display:none}
+  body.en [data-l="en"],body.es [data-l="es"]{display:block}
+</style>
+</head>
+<body class="en">
+  <div class="bar">
+    <a href="/">&larr; Home</a>
+    <div class="lang">
+      <button id="b-en" class="on" onclick="setLang('en')">EN</button>
+      <button id="b-es" onclick="setLang('es')">ES</button>
+    </div>
+  </div>
 
+  <main class="card">
+    <h1 data-l="en">TERMS &amp; CONDITIONS</h1>
+    <h1 data-l="es">TÉRMINOS Y CONDICIONES</h1>
+    <div class="rule"></div>
+
+    <section data-l="en">
+      <h2>DEPOSIT</h2>
+      <p>DEPOSIT IS NON-REFUNDABLE. All of our items are personalized; therefore, we require a non-refundable deposit of 50% of your order total to cover the cost of materials needed for your order.</p>
+      <h2>REFUNDS &amp; RETURNS</h2>
+      <p>ALL SALES ARE FINAL. We do not offer returns for personalized items. Please check your items and make sure everything is complete when you pick up your order and before you sign the proof of delivery.</p>
+      <h2>COMPLETION TIME</h2>
+      <p>Any completion or delivery dates provided are estimated times only. While we make every reasonable effort to meet those time frames, they are not guaranteed and are subject to change due to unforeseen circumstances, such as delays in deliveries, your materials, your place in line, etc.</p>
+      <h2>REMAINING BALANCE DUE</h2>
+      <p>Any remaining balance that is due will need to be paid before or at the time of picking up your order.</p>
+      <p class="foot">Please review these terms before placing your order and at pickup.</p>
+    </section>
+
+    <section data-l="es">
+      <h2>DEPÓSITO</h2>
+      <p>EL DEPÓSITO NO ES REEMBOLSABLE. Todos nuestros artículos son personalizados; por lo tanto, requerimos un depósito no reembolsable del 50% del total de su pedido para cubrir el costo de los materiales necesarios para su pedido.</p>
+      <h2>REEMBOLSOS Y DEVOLUCIONES</h2>
+      <p>TODAS LAS VENTAS SON FINALES. No ofrecemos devoluciones de artículos personalizados. Por favor revise sus artículos y asegúrese de que todo esté completo cuando recoja su pedido y antes de firmar la prueba de entrega.</p>
+      <h2>TIEMPO DE ENTREGA</h2>
+      <p>Las fechas de finalización o entrega proporcionadas son solo tiempos estimados. Aunque hacemos todo lo razonable para cumplir con esos plazos, no están garantizados y están sujetos a cambios debido a circunstancias imprevistas, como retrasos en las entregas, sus materiales, su lugar en la fila, etc.</p>
+      <h2>SALDO PENDIENTE</h2>
+      <p>Cualquier saldo pendiente deberá pagarse antes o al momento de recoger su pedido.</p>
+      <p class="foot">Por favor revise estos términos antes de hacer su pedido y al recoger.</p>
+    </section>
+  </main>
+
+<script>
+  function setLang(l){
+    document.body.className = l;
+    document.documentElement.lang = l;
+    document.getElementById('b-en').classList.toggle('on', l==='en');
+    document.getElementById('b-es').classList.toggle('on', l==='es');
+  }
+</script>
+</body>
+</html>
